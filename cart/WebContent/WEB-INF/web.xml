@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+
+   
+  <display-name>tired</display-name>
+   <servlet>
+   <servlet-name>BuyServlet</servlet-name>
+   <servlet-class>com.hbsi.web.controller.BuyServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>BuyServlet</servlet-name>
+   <url-pattern>/BuyServlet</url-pattern>
+</servlet-mapping>
+   <servlet>
+   <servlet-name>ChangeQuantityServlet</servlet-name>
+   <servlet-class>com.hbsi.web.controller.ChangeQuantityServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ChangeQuantityServlet</servlet-name>
+   <url-pattern>/ChangeQuantityServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+   <servlet-name>ClearCartServlet</servlet-name>
+   <servlet-class>com.hbsi.web.controller.ClearCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ClearCartServlet</servlet-name>
+   <url-pattern>/ClearCartServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+   <servlet-name>DeleteItemServlet</servlet-name>
+   <servlet-class>com.hbsi.web.controller.DeleteItemServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>DeleteItemServlet</servlet-name>
+   <url-pattern>/DeleteItemServlet</url-pattern>
+   </servlet-mapping>
+    <servlet>
+   <servlet-name>ListBookServlet</servlet-name>
+   <servlet-class>com.hbsi.web.controller.ListBookServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ListBookServlet</servlet-name>
+   <url-pattern>/ListBookServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+   <servlet-name>ListCartServlet</servlet-name>
+   <servlet-class>com.hbsi.web.ui.ListCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>ListCartServlet</servlet-name>
+   <url-pattern>/ListCartServlet</url-pattern>
+</servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>listcart.jsp</welcome-file>
+ 
+  </welcome-file-list>
+</web-app>
